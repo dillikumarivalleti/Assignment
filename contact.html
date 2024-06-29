@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CSS for text justification */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: justify;
+        }
+        .contact-details {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .contact-details li {
+            margin-bottom: 10px;
+        }
+        .main-page-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+        /* Style for the created by text */
+        .created-by {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 12px;
+            color: #888;
+        }
+    </style>
+    <script>
+        function goToMainPage() {
+            window.close();
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Page</h1>
+        <p>This is the Contact page. Please let me know the status of my application. Thank you.</p>
+
+        <ul class="contact-details">
+            <li><strong>Phone:</strong> +91 8008519264</li>
+            <li><strong>Mail:</strong> <a href="mailto:dillikumari2722@gmail.com">dillikumari2722@gmail.com</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/dillikumarivalleti" target="_blank">My GitHub</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/dilli-kumari-valleti-b40584297/" target="_blank">My LinkedIn</a></li>
+        </ul>
+
+        <div class="main-page-button">
+            <button onclick="goToMainPage()">Main Page</button>
+        </div>
+
+        <!-- Created by text -->
+        <div class="created-by">
+            Created by Dilli Kumari Valleti
+        </div>
+    </div>
+</body>
+</html>

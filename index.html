@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .footer-text {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            color: gray;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Webpage</h1>
+        <label for="content-dropdown">Choose content:</label>
+        <select id="content-dropdown" onchange="changeContent()">
+            <option value="" disabled selected>Select an option</option>
+            <option value="home">Home</option>
+            <option value="about">About</option>
+            <option value="skills">Skills</option>
+            <option value="contact">Contact</option>
+        </select>
+        <div id="content-display" class="content"></div>
+    </div>
+    
+    <div class="footer-text">Created by Dilli Kumari Valleti</div>
+
+    <script>
+        function changeContent() {
+            const dropdown = document.getElementById('content-dropdown');
+            const selectedValue = dropdown.value;
+
+            if (selectedValue) {
+                window.open(selectedValue + '.html', '_blank');
+                dropdown.selectedIndex = 0; // Reset dropdown to default option
+            }
+        }
+    </script>
+</body>
+</html>
